@@ -1,0 +1,104 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .frame .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1020px;
+    height: 673px;
+  }
+  
+  .frame .overlap-group {
+    position: relative;
+    height: 673px;
+    background-color: #ffffff;
+  }
+  
+  .frame .overlap {
+    position: absolute;
+    width: 253px;
+    height: 47px;
+    top: 23px;
+    left: 368px;
+  }
+  
+  .frame .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Istok Web-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .rectangle {
+    position: absolute;
+    width: 208px;
+    height: 8px;
+    top: 39px;
+    left: 23px;
+    background-color: #1f98be;
+  }
+  
+  .frame .img {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 92px;
+    left: 27px;
+    object-fit: cover;
+  }
+  
+  .frame .rectangle-2 {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 272px;
+    left: 505px;
+    object-fit: cover;
+  }
+  
+  .frame .rectangle-3 {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 453px;
+    left: 505px;
+    object-fit: cover;
+  }
+  
+  .frame .rectangle-4 {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 453px;
+    left: 27px;
+    object-fit: cover;
+  }
+  
+  .frame .rectangle-5 {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 92px;
+    left: 505px;
+    object-fit: cover;
+  }
+  
+  .frame .rectangle-6 {
+    position: absolute;
+    width: 446px;
+    height: 156px;
+    top: 272px;
+    left: 27px;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,134 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    left: 9px;
+  }
+  
+  .frame .overlap-group-wrapper {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1350px;
+    height: 1000px;
+    left: 9px;
+  }
+  
+  .frame .overlap-group {
+    position: relative;
+    width: 1350px;
+    height: 1000px;
+    background-color: #ffffff;
+    left: 9px;
+  }
+  
+  .frame .text-wrapper {
+    position: absolute;
+    top: 47px;
+    left: 550px;
+    font-family: "Istok Web-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .rectangle {
+    position: absolute;
+    width: 230px;
+    height: 5px;
+    top: 94px;
+    left: 566px;
+    background-color: #119ebd;
+  }
+  
+  .frame .img {
+    position: absolute;
+    width: 469px;
+    height: 245px;
+    top: 134px;
+    left: 1px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .frame .rectangle-2 {
+    position: absolute;
+    width: 350px;
+    height: 727px;
+    top: 134px;
+    left: 954px;
+    object-fit: cover;
+    border-radius: 15px;
+    :hover
+    {
+      box-shadow: #000000;
+      -moz-box-shadow: #000000;
+      -webkit-box-shadow: #000000;
+      box-shadow: #000000;
+    }
+  }
+  
+  .frame .rectangle-3 {
+    position: absolute;
+    width: 340px;
+    height: 245px;
+    top: 385px;
+    left: 1px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .frame .rectangle-4 {
+    position: absolute;
+    width: 229px;
+    height: 245px;
+    top: 385px;
+    left: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .frame .rectangle-5 {
+    position: absolute;
+    width: 469px;
+    height: 245px;
+    top: 134px;
+    left: 475px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .frame .rectangle-6 {
+    position: absolute;
+    width: 360px;
+    height: 245px;
+    top: 385px;
+    left: 586px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .frame .rectangle-7 {
+    position: absolute;
+    width: 500px;
+    height: 224px;
+    top: 640px;
+    left: 1px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .frame .rectangle-8 {
+    position: absolute;
+    width: 431px;
+    height: 224px;
+    top: 640px;
+    left: 509px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
