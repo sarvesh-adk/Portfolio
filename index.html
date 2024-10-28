@@ -1,388 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="script.js"></script>
-    
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sarvesh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Sarvesh</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Sarvesh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sarvesh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Profile.png" alt="Profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sarvesh</h1>
-        <p class="section__text__p2">Sarbeswar Adhikari</p>
-        <p>Co-Founder and MD at Vedanta Media Network</p><br>
-        <p>Student Partner at Internshala</p><br>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="location.href='./Resume'"
-          >
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Profile.png" alt="Profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Sarvesh</h1>
+      <p class="section__text__p2">Sarbeswar Adhikari</p>
+      <p>Co-Founder and MD at Vedanta Media Network</p><br>
+      <p>Student Partner at Internshala</p><br>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="location.href='./Resume'">
           Resume
-          </button>
-          <button class="btn btn-color-1"  onclick="location.href='./#contact'">
-           Contact me
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sarvesh-adk/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/sarvesh-adk'"
-          />
-          <img
-          src="./assets/instagram.png"
-          alt="My instagram profile"
-          class="icon"
-          onclick="location.href='https://instagram.com/sarvesh.adk'"
-        />
-        <img
-        src="./assets/X-logo.png"
-        alt="My X profile"
-        class="icon"
-        onclick="location.href='https://twitter.com/sarvesh_adk_'"
-      />
-        </div>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact me
+        </button>
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>10+2 level</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              A dedicated Computer Engineering student with a strong foundation in web development and programming. Proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind, and MERN Stack. Passionate about creating innovative solutions and collaborating with talented teams.
-          </div>
-        </div>
+      <div id="socials-container">
+        <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sarvesh-adk/'" />
+          
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/sarvesh-adk'" /> -->
+        <a href="https://www.linkedin.com/in/sarvesh-adk/" target="_blank">
+          <img src="./assets/linkedin.png" alt="My instagram profile" class="icon"/>
+        </a>
+        <a href="https://github.com/sarvesh-adk" target="_blank">
+          <img src="./assets/github.png" alt="My instagram profile" class="icon"/>
+        </a>
+        <a href="https://instagram.com/sarvesh.adk" target="_blank">
+          <img src="./assets/instagram.png" alt="My instagram profile" class="icon"/>
+        </a>
+        <a href="https://x.com/sarvesh_adk_" target="_blank">
+          <img src="./assets/x-logo.png" alt="My instagram profile" class="icon"/>
+        </a>
+        <!-- <img src="./assets/X-logo.png" alt="My X profile" class="icon"
+          onclick="location.href='https://twitter.com/sarvesh_adk_'" /> -->
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+
+      <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Next Js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Frontend Development</p>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Others</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <a:hover><div>
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>10+2 level</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A dedicated Computer Engineering student with a strong foundation in web development and programming.
+            Proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind, and MERN Stack. Passionate about creating
+            innovative solutions and collaborating with talented teams.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Next Js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Others</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <a:hover>
+                <div>
                   <h3>Photography</h3>
                   <p>Intermediate</p>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               </a:hover>
-                <div>
-                  <h3>Cinematography</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Film Making</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>UI/UX Design </h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+              <div>
+                <h3>Cinematography</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Film Making</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>UI/UX Design </h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Works</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/photos.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Photography</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./Photos/index.html'"
-              >
-                View
-              </button>
-            </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Works</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/photos.png" alt="Project 1" class="project-img" />
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Cinematics.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Flim-making</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./Photos/Cine/index.html'"
-              >
-                Watch
-              </button>
-            </div>
+          <h2 class="experience-sub-title project-title">Photography</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='./Photos/index.html'">
+              View
+            </button>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Screenshot 2024-01-08 at 14-24-49 _.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Web Development</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-3 project-btn"
-                onclick="location.href='404.html'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/sarvesh.adk'"
-              >
-                Live Demo
-              </button>
-            </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Cinematics.jpeg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Flim-making</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='./Photos/Cine/index.html'">
+              Watch
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Screenshot 2024-01-08 at 14-24-49 _.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Web Development</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-3 project-btn" onclick="location.href='404.html'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sarvesh.adk'">
+              Live Demo
+            </button>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Let's connect</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:mail@sarbeswar.tech">mail@sarbeswar.tech</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/@sarvesh.adk">LinkedIn</a></p>
-        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Let's connect</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mail@sarbeswar.tech">mail@sarbeswar.tech</a></p>
       </div>
-    </section>
-    <footer>
-      <p>Copyright &#169; 2024 Sarbeswar Adhikari, All Rights Reserved.</p>
-    </footer>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-    
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyDJ0N3glRGMbn94LHEwxgbhwIFAwNUu9fY",
-        authDomain: "portfolio-ddd18.firebaseapp.com",
-        projectId: "portfolio-ddd18",
-        storageBucket: "portfolio-ddd18.appspot.com",
-        messagingSenderId: "599914493197",
-        appId: "1:599914493197:web:432966485b1e1b8a8dec44",
-        measurementId: "G-KJHLQJSS1S"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-  </body>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/sarvesh-adk">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2024 Sarbeswar Adhikari, All Rights Reserved.</p>
+  </footer>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDJ0N3glRGMbn94LHEwxgbhwIFAwNUu9fY",
+      authDomain: "portfolio-ddd18.firebaseapp.com",
+      projectId: "portfolio-ddd18",
+      storageBucket: "portfolio-ddd18.appspot.com",
+      messagingSenderId: "599914493197",
+      appId: "1:599914493197:web:432966485b1e1b8a8dec44",
+      measurementId: "G-KJHLQJSS1S"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
 </html>
