@@ -253,6 +253,7 @@ section {
 .btn-color-2:hover {
   background: rgb(7, 7, 7);
   color: white;
+  border-color: #ffffff;
 }
 
 .btn-color-1:hover {
@@ -270,7 +271,7 @@ section {
 .btn-color-3 {
   background:  #000000;
   -webkit-text-fill-color: white;
-  border: #ffffff
+  border-color: #ffffff
 }
 
 .btn-container {
@@ -312,7 +313,6 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -377,7 +377,6 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
 }
 
 .project-img {
@@ -447,3 +446,8 @@ footer p {
   text-align: center;
 }
 
+body.dark-theme {
+  background-color: #121212;
+  -webkit-text-fill-color: white;
+
+}
