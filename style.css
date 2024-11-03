@@ -270,6 +270,7 @@ section {
 .btn-color-3 {
   background:  #000000;
   -webkit-text-fill-color: white;
+  border: #ffffff
 }
 
 .btn-container {
