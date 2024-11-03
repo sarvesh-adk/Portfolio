@@ -458,4 +458,12 @@ body.dark-theme {
     color:gray;
   }
 
+  .menu-links{
+    background-color: #121212;
+  }
+
+  .hamburger-icon span{
+    background-color: #fff;
+  }
+
 }
