@@ -448,6 +448,14 @@ footer p {
 
 body.dark-theme {
   background-color: #121212;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: white !important;
+  
+  a {
+    color:white;
+  }
+
+  a:hover{
+    color:gray;
+  }
 
 }
