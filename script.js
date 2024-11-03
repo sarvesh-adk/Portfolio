@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function imgSrc () {
-  let expIcon = document.getElementById('experience-icon')
-  let eduIcon = document.getElementById('education-icon')
-  let checkIcon = document.getElementsByClassName('check-icon')
+  const expIcon = document.getElementById('experience-icon')
+  const eduIcon = document.getElementById('education-icon')
+  const checkIcon = document.getElementsByClassName('check-icon')
 
   if (document.body.classList.contains('dark-theme')) {
     expIcon.src = './assets/experience-dark.png'
