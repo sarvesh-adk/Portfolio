@@ -16,19 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function imgSrc () {
   const expIcon = document.getElementById('experience-icon')
   const eduIcon = document.getElementById('education-icon')
-  const checkIcons = document.getElementsByClassName('checkmark-icon')
+  const checkIcon = document.getElementsByClassName('checkmark-icon')
 
   if (document.body.classList.contains('dark-theme')) {
-    if (expIcon) expIcon.src = './assets/experience-dark.png'
-    if (eduIcon) eduIcon.src = './assets/education-dark.png'
-    for (let i = 0; i < checkIcons.length; i++) {
-      checkIcons[i].src = './assets/checkmark-dark.png'
-    }
+    expIcon.src = './assets/experience-dark.png'
+    eduIcon.src = './assets/education-dark.png'
+    checkIcon.src = './assets/checkmark-dark.png'
   } else {
-    if (expIcon) expIcon.src = './assets/experience-light.png'
-    if (eduIcon) eduIcon.src = './assets/education-light.png'
-    for (let i = 0; i < checkIcons.length; i++) {
-      checkIcons[i].src = './assets/checkmark-light.png'
-    }
+    expIcon.src = './assets/experience-light.png'
+    eduIcon.src = './assets/education-light.png'
+    checkIcon.src = './assets/checkmark-light.png'
   }
 }
+
