@@ -383,6 +383,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  filter: grayscale(100%);
 }
 
 .project-title {
